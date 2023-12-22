@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# this script dis play the content of this current directory in a list format where only this part of this name after this first dash is displayed
+
+for i in *
+do
+	echo "$i" | cut -d'-' -f2
+done

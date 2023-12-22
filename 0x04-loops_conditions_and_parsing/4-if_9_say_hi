@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# this script is dis playing "Best School" 10 time but for the 9th iteration display Best School and then
+
+COUNT=0
+while [ $COUNT -lt 11 ]
+do
+	if [ $COUNT -eq 9 ]
+	then
+		echo "Hi"
+	else
+		echo "Best School"
+	fi
+	COUNT=$(( COUNT + 1 ))
+done

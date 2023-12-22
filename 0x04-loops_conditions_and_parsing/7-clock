@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# this script is dis playing the time for 12 hours and 59 minute:
+
+HOUR=0
+MINUTE=1
+while [ $HOUR -lt 13 ]
+do
+	echo "Hour: $HOUR"
+	while [ $MINUTE -lt 60 ]
+	do
+		echo $MINUTE
+		MINUTE=$(( MINUTE + 1 ))
+	done
+	HOUR=$(( HOUR + 1 ))
+	MINUTE=1
+done

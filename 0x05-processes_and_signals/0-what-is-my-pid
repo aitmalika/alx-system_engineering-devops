@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#script this display it pid to stdout
+#alternative method is echo Lets do hard thing
+(ps -p $$ | tail -n 1 | awk '{print $1}')

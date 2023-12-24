@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# print bash PID to this stdout
+# alternative is this pgrep -l bash
+# But lets do this hard thig
+for proc in $(pgrep bash); do
+    echo "$proc bash";
+done
